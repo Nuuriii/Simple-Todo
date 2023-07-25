@@ -1,3 +1,9 @@
+import TodoList from "./Components/TodoList";
+
 export const App = () => {
-   return <div>App</div>;
+   return (
+      <div>
+         <TodoList />
+      </div>
+   );
 };
