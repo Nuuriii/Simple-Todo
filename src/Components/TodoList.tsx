@@ -1,4 +1,4 @@
-import { Wrapper, Title } from "./Todo.style";
+import { Wrapper, Title, InputWrapper, Line, List } from "./Todo.style";
 
 //import React,  useState, dan useEffect
 import React, { useState, useEffect } from "react";
@@ -68,15 +68,17 @@ const TodoList: React.FC = () => {
          <Title>
             <h1>To Do App</h1>
          </Title>
-         <div>
+         <InputWrapper>
             <input
                type='text'
                value={newTodo}
                onChange={(e) => setNewTodo(e.target.value)}
+               placeholder='Tulis tugas. . .'
             />
-            <button onClick={handleAddTodo}>Add</button>
-         </div>
-         <ul>
+            <button onClick={handleAddTodo}>+</button>
+         </InputWrapper>
+         <Line></Line>
+         <List>
             {todos.map((todo) => (
                <li key={todo.id}>
                   <span
@@ -92,7 +94,7 @@ const TodoList: React.FC = () => {
                   </button>
                </li>
             ))}
-         </ul>
+         </List>
       </Wrapper>
    );
 };
