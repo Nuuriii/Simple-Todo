@@ -63,6 +63,8 @@ export const List = styled.div`
    gap: 1rem;
    li {
       display: flex;
+      gap: 3px;
+      align-items: center;
       padding: 0 1rem;
       span {
          padding: 0.9rem 0.8rem;
@@ -73,6 +75,18 @@ export const List = styled.div`
          font-family: Ubuntu, "sans";
          justify-content: center;
          background-color: #dbe2ef;
+         border: 2px solid black;
+      }
+      button {
+         border: 2px solid black;
+         padding: 6px;
+         border-radius: 0.3rem;
+         background-color: red;
+         height: 3rem;
+      }
+      button:hover {
+         background-color: rgb(207, 69, 69);
+         transform: scale(0.96);
       }
    }
 `;

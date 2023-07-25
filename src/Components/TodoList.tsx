@@ -1,4 +1,5 @@
 import { Wrapper, Title, InputWrapper, Line, List } from "./Todo.style";
+import Trash from "../../public/img/Trash.svg";
 
 //import React,  useState, dan useEffect
 import React, { useState, useEffect } from "react";
@@ -90,7 +91,7 @@ const TodoList: React.FC = () => {
                      {todo.text}
                   </span>
                   <button onClick={() => handleRemoveTodo(todo.id)}>
-                     Remove
+                     <img src={Trash} alt='' />
                   </button>
                </li>
             ))}
