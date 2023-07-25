@@ -1,4 +1,6 @@
 :root {
    height: 100vh;
    background-color: #3f72af;
+   display: flex;
+   justify-content: center;
 }

@@ -2,11 +2,15 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
    display: flex;
+   width: 20rem;
    justify-content: center;
    flex-direction: column;
    background-color: #f9f7f7;
    border-radius: 0.625rem;
-   padding: 0 1rem;
+   padding: 0 1rem 3rem 1rem;
+   @media screen and (min-width: 1200px) {
+      width: 30rem;
+   }
 `;
 
 export const Title = styled.div`
@@ -22,6 +26,7 @@ export const Title = styled.div`
 export const InputWrapper = styled.div`
    display: flex;
    justify-content: center;
+   gap: 5px;
    input {
       background-color: #dbe2ef;
       border: none;
@@ -34,14 +39,19 @@ export const InputWrapper = styled.div`
    }
    button {
       font-size: 40px;
-      position: relative;
       right: 4px;
       border: none;
       padding: 0.4rem 1rem;
       background-color: #aaa;
       color: white;
-      border-top-right-radius: 0.3rem;
-      border-bottom-right-radius: 0.3rem;
+      border-radius: 0.3rem;
+   }
+   button:hover {
+      background-color: #b8abab;
+   }
+   button:active {
+      transform: scale(0.96);
+      background-color: #d6d3d3;
    }
 `;
 
