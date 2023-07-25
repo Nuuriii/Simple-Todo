@@ -78,7 +78,9 @@ const TodoList: React.FC = () => {
             />
             <button onClick={handleAddTodo}>+</button>
          </InputWrapper>
-         <Line></Line>
+         <Line>
+            <div></div>
+         </Line>
          <List>
             {todos.map((todo) => (
                <li key={todo.id}>

@@ -28,6 +28,7 @@ export const InputWrapper = styled.div`
    justify-content: center;
    gap: 5px;
    input {
+      font-size: 1rem;
       background-color: #dbe2ef;
       border: none;
       border-radius: 0.3rem;
@@ -56,11 +57,13 @@ export const InputWrapper = styled.div`
 `;
 
 export const Line = styled.div`
-   width: 19rem;
    display: flex;
    margin: 4rem 0 2rem 0;
    justify-content: center;
-   border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+   div {
+      width: 19em;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+   }
 `;
 
 export const List = styled.div`
