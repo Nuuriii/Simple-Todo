@@ -48,7 +48,7 @@ export const InputWrapper = styled.div`
 export const Line = styled.div`
    width: 19rem;
    display: flex;
-   margin: 4rem 0;
+   margin: 4rem 0 2rem 0;
    justify-content: center;
    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
 `;
@@ -59,4 +59,20 @@ export const List = styled.div`
    align-items: center;
    list-style: none;
    flex-direction: column;
+   margin-bottom: 1rem;
+   gap: 1rem;
+   li {
+      display: flex;
+      padding: 0 1rem;
+      span {
+         padding: 0.9rem 0.8rem;
+         width: 15rem;
+         word-break: break-all;
+         border-radius: 0.3rem;
+         display: flex;
+         font-family: Ubuntu, "sans";
+         justify-content: center;
+         background-color: #dbe2ef;
+      }
+   }
 `;
