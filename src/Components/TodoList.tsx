@@ -1,4 +1,4 @@
-// src/components/TodoList.tsx
+import { Wrapper, Title } from "./Todo.style";
 
 //import React,  useState, dan useEffect
 import React, { useState, useEffect } from "react";
@@ -64,7 +64,10 @@ const TodoList: React.FC = () => {
    };
 
    return (
-      <div>
+      <Wrapper>
+         <Title>
+            <h1>To Do App</h1>
+         </Title>
          <div>
             <input
                type='text'
@@ -90,7 +93,7 @@ const TodoList: React.FC = () => {
                </li>
             ))}
          </ul>
-      </div>
+      </Wrapper>
    );
 };
 
