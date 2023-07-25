@@ -38,6 +38,11 @@ export const InputWrapper = styled.div`
       color: #7b7b7b;
       font-size: 1rem;
    }
+   input:focus {
+      outline: solid;
+      outline-width: 2px;
+      outline-color: #737881;
+   }
    button {
       font-size: 40px;
       right: 4px;
